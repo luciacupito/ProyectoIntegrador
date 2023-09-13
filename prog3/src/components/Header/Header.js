@@ -9,11 +9,11 @@ function Header (){
     <section>
        
         <div>
-            <a href="./index.html"><img src="./img/logo.jpg" alt="LogoDHMovies" className="logo"/></a>
+            <a href="./index.html"><img src="./img/logo.jpg" alt="LogoFilmex" className="logo"/></a>
             
             <section className="barra">
                 <form>
-                    <input type="text" id="input" placeholder="Buscar en DH Movies" className="buscador" name = "search" value = ""/>
+                    <input type="text" id="input" placeholder="Buscar en Filmex" className="buscador" name = "search" value = ""/>
     
                     <button type="submit" id="search" className="bordelupa">
                         <img src="./img/lupa.jpg" alt="" className="lupa"/>
@@ -28,7 +28,7 @@ function Header (){
                 <ul className="inicio">
                     <li><a className="inicio" href="./index.html">HOME</a></li>
                     <li><a className="inicio" href="./favoritos.html">FAVORITOS</a></li>
-                    <li><a className="inicio" href="./generos.html">FAVORITOS</a></li>
+                    <li><a className="inicio" href="./generos.html">GENEROS</a></li>
                 </ul>
             </nav>
             
