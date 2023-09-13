@@ -56,7 +56,7 @@ class Home extends Component {
             <h2 className="ultimo">Peliculas populares</h2>
             <section className="imagen">
                 {this.state.populares.length > 0 ?(
-                this.state.populares.slice(0,4).map((movie)=><Card movie={movie}/>)
+                this.state.populares.slice(0,5).map((movie)=><Card movie={movie}/>)
             ):(
                 <p className='cargando'>Cargando...</p>
             )}
@@ -65,7 +65,7 @@ class Home extends Component {
             <h2 class="ultimo">Peliculas mas valoradas</h2>
             <section className="imagen">
                 {this.state.top_rated.length > 0 ?(
-                this.state.top_rated.slice(0,4).map((movie)=><Card movie={movie}/>)
+                this.state.top_rated.slice(0,5).map((movie)=><Card movie={movie}/>)
             ):(
                 <p className='cargando'>Cargando...</p>
             )}

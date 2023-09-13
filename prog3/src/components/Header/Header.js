@@ -28,7 +28,7 @@ function Header (){
                 <ul className="inicio">
                     <li><a className="inicio" href="./index.html">HOME</a></li>
                     <li><a className="inicio" href="./favoritos.html">FAVORITOS</a></li>
-                    <li><a className="inicio" href="./generos.html">GENEROS</a></li>
+                    <li><a className="inicio" href="./generos.html">FAVORITOS</a></li>
                 </ul>
             </nav>
             
