@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Filtro from "../Filtro/Filtro";
-import Each from '../Each/Each';
+import Each from '../../components/Each/Each';
 import OnlySeriesCss from "./OnlySeries.css";
 
 

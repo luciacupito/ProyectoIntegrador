@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import {AiOutlineHeart} from "react-icons/ai";
-import {AiFillHeart} from "react-icons/ai";
 import DetailCss from "../Detail/Detail.css"
 
 let imagen = "https://image.tmdb.org/t/p/w342"
@@ -11,7 +9,7 @@ class Detail extends Component{
        
         this.state = {
             id: this.props.match.params.id,
-            heart: <AiOutlineHeart style={{color: 'white', fontSize: '30px'}}/>,
+            heart: 'Agregar a favoritos',
             favoritos: [],
             detail : {},
 
@@ -26,7 +24,7 @@ class Detail extends Component{
 
         if(FavArray.includes(this.state.id)){
             this.setState({
-                heart: <AiFillHeart style={{color: 'red', fontSize: '30px'}}/>
+                heart: 'Quitar de favoritos',
              })
            }     
         }
@@ -50,13 +48,13 @@ class Detail extends Component{
         if(FavArray.includes(this.state.id)){
             FavArray = FavArray.filter(unId => unId !== this.state.id);
             this.setState ({
-                heart: <AiOutlineHeart style={{color: 'white', fontSize: '30px'}}/>
+                heart: 'Agregar a favoritos',
             })
         }else{
             FavArray.push(this.state.id);
             this.setState({
-                heart: <AiFillHeart style={{color: 'red', fontSize: '30px'}}/>/* "Remove from favorites" */
-        })
+                heart: 'Quitar de favoritos',
+            })
         }
     }
     let Stringify = JSON.stringify(FavArray)

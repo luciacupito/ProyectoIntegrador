@@ -1,5 +1,5 @@
 import React from "react";
-import header from "./header.css";
+import header from "./Header.css";
 import {Link} from "react-router-dom"
 import Buscador from "../Buscador/Buscador";
 
