@@ -1,15 +1,20 @@
 import React from "react";
-import './Footer.css'
+import footer from "./footer.css";
 
 function Footer(){
     return(
         <footer>
-    <hr className="linea"/>
-    <a className="footerpadding" href="./index.html"><img src="./img/tmbd.svg" alt="logoTMB" className="logofooter"/></a>
-    <h4 className="paddingtopfooter">Lucia Cupito | Simone Bordelois | Jazmin Lombardi</h4>
-    <h4 className="paddingbottomfooter"> Filmex</h4>
-</footer>
+            <section className="footersection"> 
+                <p className="nombres">Simone Bordelois| Lucia Cupito | Jazmin Lombardi </p>  
+                    <div>
+                        <p className="nombres">Filmex 2023</p>
+                        <img className="logofooter" src='/logo.jpg' alt="Logo"/>        
+                    </div>
+            </section>
+  
+ 
+    </footer>
     )
 }
 
-export default Footer
+export default Footer;

@@ -1,6 +1,7 @@
 import React from "react";
 import header from "./header.css";
 import {Link} from "react-router-dom"
+import Buscador from "../Buscador/Buscador";
 
 
 function Header (){
@@ -20,6 +21,8 @@ function Header (){
         <Link to="/favoritos" className="click">Tus Favoritos</Link>
 
         </article>
+        <Buscador/>
+
 
         {/* <form className="formbusqueda" action="./searchResults" method="get">
             <input className="inputbusqueda" type="text" name="buscar" id="" placeholder="Buscar..."/>

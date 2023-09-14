@@ -1,0 +1,24 @@
+.botonbuscador{
+    background-color: white;
+    border-radius: 50px;
+    border-color: transparent;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.inputbuscador{
+    background-color: white;
+    border-radius: 50px;
+    height: 30px;
+    border-color: transparent;
+    font-family: 'Work Sans', sans-serif;
+    margin: 6px;
+
+}
+
+.formbuscador{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+}

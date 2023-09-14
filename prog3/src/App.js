@@ -1,33 +1,34 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter and Routes
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Header from './components/Header/Header'
-import Footer from "./components/Footer/Footer";
 import Home from "./screens/Home/Home"
-import Detalle from "./screens/Detalle/Detalle";
+import Detail from "./screens/Detail/Detail";
+
+import Footer from "./components/Footer/Footer";
+
+
+
 
 function App() {
   return (
-    <Router> {/* Wrap your routes in a Router component */}
-      <body>
-        <Header />
-        <h1>My App in React</h1>
-        <main>
-          <Routes> {/* Use Routes instead of Switch */}
-            <Route path="/" element={<Home />} />
-            {/* <Route path="/favoritos" element={<Favoritos />} /> */}
-            <Route path="/detalle/:id" element={<Detalle />} />
-            {/* <Route path="/popular" element={<Popular />} /> */}
-            {/* <Route path="/upcoming" element={<Upcoming />} />
-            <Route path="/busqueda/:search" element={<Results />} />
-            <Route path="*" element={<Error404 />} /> */}
-          </Routes>
-        </main>
-        <Footer />
-      </body>
-    </Router>
+    <div className="App">
+      <Header/>
+          <Switch>
+            <Route path="/" exact={true} component={Home}/>
+            <Route path="/detPeli/:id" component={Detail}/>
+
+            <Route path="/searchResults/:search" component={SearchResults}/>
+
+
+            <Route path="" component={Error}/>
+            
+          </Switch>
+
+      <Footer/>
+    </div>
   );
 }
 
 export default App;
-
 
