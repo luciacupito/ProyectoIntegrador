@@ -1,11 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header/Header'
 import Home from "./screens/Home/Home"
 import Detail from "./screens/Detail/Detail";
-
 import Footer from "./components/Footer/Footer";
+import OnlyMovies from "./screens/OnlyMovies/OnlyMovies"
+import OnlySeries from "./screens/OnlySeries/OnlySeries";
+import Favoritos from "./screens/Favoritos/Favoritos";
+
 
 
 
@@ -17,10 +20,10 @@ function App() {
           <Switch>
             <Route path="/" exact={true} component={Home}/>
             <Route path="/detPeli/:id" component={Detail}/>
-
+            <Route path="/favoritos" component={Favoritos}/>
             <Route path="/searchResults/:search" component={SearchResults}/>
-
-
+            <Route path="/movies" component={OnlyMovies}/>
+            <Route path="/series" component={OnlySeries}/>
             <Route path="" component={Error}/>
             
           </Switch>
