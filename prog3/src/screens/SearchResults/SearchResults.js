@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Pelis from "../OnlyMovies/OnlyMovies";
 
-class Results extends Component{
+class SearchResults extends Component{
     constructor(){
         super()
         this.state={
@@ -47,4 +47,4 @@ class Results extends Component{
     }
     
 }
-export default Results;
+export default SearchResults;

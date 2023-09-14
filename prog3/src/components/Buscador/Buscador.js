@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
-//import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom';
 import BuscadorCss from "../Buscador/Buscador.css"
 
 class Buscador extends Component{
