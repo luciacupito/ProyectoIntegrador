@@ -1,44 +1,33 @@
 import React from "react";
-import './Header.css'
+import header from "./header.css";
+import {Link} from "react-router-dom"
+
 
 function Header (){
     return(
         <header>
-
-
-    <section>
-       
-        <div>
-            <a href="./index.html"><img src="./img/logo.jpg" alt="LogoFilmex" className="logo"/></a>
-            
-            <section className="barra">
-                <form>
-                    <input type="text" id="input" placeholder="Buscar en Filmex" className="buscador" name = "search" value = ""/>
-    
-                    <button type="submit" id="search" className="bordelupa">
-                        <img src="./img/lupa.jpg" alt="" className="lupa"/>
-                    </button>
-                </form>
-            </section>
-
-       <button className="botonDark">Aclarar fondo</button>         
-
-       
-            <nav>
-                <ul className="inicio">
-                    <li><a className="inicio" href="./index.html">HOME</a></li>
-                    <li><a className="inicio" href="./favoritos.html">FAVORITOS</a></li>
-                    <li><a className="inicio" href="./generos.html">GENEROS</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-
+    <section className = "headerIzquierda">
+        
+        <img className="logo" src='/logo.jpg' alt="Logo Empresa"/>
+        <a href="/" className="nombrepagina"><h2 className="nombrepagina">Filmex</h2></a>
     </section>
 
 
+    <nav className="headerDerecha">
+        <article className="seccionesHeader">     
+        <Link to="/movies" className="click">Ver todas las Peliculas</Link>
+        <Link to="/series" className="click">Ver todas las Series</Link>
+        <Link to="/favoritos" className="click">Tus Favoritos</Link>
+
+        </article>
+
+        {/* <form className="formbusqueda" action="./searchResults" method="get">
+            <input className="inputbusqueda" type="text" name="buscar" id="" placeholder="Buscar..."/>
+            <button className="submitbtn" type="submit"><CgSearch style={{color: 'black'}}/></button>
+        </form> */}
+    </nav>
 </header>
     )
 }
 
-export default Header 
+export default Header;

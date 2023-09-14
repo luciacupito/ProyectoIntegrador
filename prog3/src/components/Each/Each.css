@@ -1,0 +1,75 @@
+.nombre{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.articuloEach{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+.boton{
+    max-width: 200px;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 10px;
+    width: auto;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    margin: 10px;
+    text-decoration: none;
+    border-color: transparent;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.botontext{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    border-color: transparent;
+    border-radius: 5px ;
+
+
+}
+.botonlike:hover{
+    background-color: red;
+}
+
+.botonlike{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    border-color: transparent;
+    border-radius: 5px ;
+}
+
+.portada{
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+
+.ocultar{
+    display: none;
+}
+.ver{
+    max-width: 150px;
+}
