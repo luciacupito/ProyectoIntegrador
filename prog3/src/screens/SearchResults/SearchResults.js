@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import OnlyMovies from "../OnlyMovies/OnlyMovies";
+import Each from "../../components/Each/Each";
+import SearchResultscss from "./SearchResults.css";
 
 class SearchResults extends Component{
     constructor(){
@@ -22,24 +23,37 @@ class SearchResults extends Component{
 
     render(){
         return(
-        <React.Fragment>
-            {
-            this.state.resultados.length > 0 ?
-        <section>
-            <h2 className="titulo">Resultados de Peliculas</h2>
-            <div>
-                {
-                   this.state.resultados.map((movie, id)=> <OnlyMovies key={movie + id} datosPop={movie}/>)}
-                
-               
-    
-            </div>
-        </section>:
-         <h3>No results</h3>}
+            <React.Fragment>
+
+            <h1 className="titulo"> Resultado de busqueda </h1>
+            <React.Fragment>
+
         
+            </React.Fragment>
+            {
+                this.state.resultados.length !== 0 ?
+                    <React.Fragment>
+            
+                        <section >
+                            <div className="block" >
+                         {this.state.resultados.map((Obj) => <Each title={ this.props.esPeli ? Obj.title : Obj.name} poster={Obj.poster_path} description={Obj.overview} id={Obj.id} esPeli={this.props.esPeli?true:false}/> )}
+                            </div>
+                        </section>
+                
+                    </React.Fragment>
+                    : <>
+                        <React.Fragment>
+                            <h1> No hay resultados en tu busqueda: {this.props.match.params.search} </h1>
+                        </React.Fragment>
+                    </>
+                   
+            }
+          
         </React.Fragment>
+      
         )
     }
     
 }
 export default SearchResults;
+
