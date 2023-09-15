@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Pelis from "../OnlyMovies/OnlyMovies";
+import OnlyMovies from "../OnlyMovies/OnlyMovies";
 
 class SearchResults extends Component{
     constructor(){
@@ -25,22 +25,17 @@ class SearchResults extends Component{
         <React.Fragment>
             {
             this.state.resultados.length > 0 ?
-        <section className="contenedor">
-
-        <button role="boton" id="flecha" className="flecha-izquierda"><i className="icon-angle-left"></i></button>
-        <article className="contenedor-peliculas">
+        <section>
             <h2 className="titulo">Resultados de Peliculas</h2>
-            <div className="galeria">
+            <div>
                 {
-                   this.state.resultados.map((movie, id)=> <Pelis key={movie + id} datosPop={movie}/>)}
+                   this.state.resultados.map((movie, id)=> <OnlyMovies key={movie + id} datosPop={movie}/>)}
                 
                
     
             </div>
-        </article>
-        <button role="boton" id="flecha" className="flecha-derecha"><i className="icon-angle-right"></i></button>
         </section>:
-         <h3>Loading...</h3>}
+         <h3>No results</h3>}
         
         </React.Fragment>
         )

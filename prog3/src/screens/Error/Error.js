@@ -2,7 +2,7 @@ import React from "react";
 
 function Error () {
     return(
-        <div class="sketchfab-embed-wrapper">
+        <div className="sketchfab-embed-wrapper">
          
         </div>
     )

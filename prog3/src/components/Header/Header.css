@@ -30,6 +30,8 @@ header{
 
 .nombrepagina{
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .seccionesHeader{
@@ -48,43 +50,16 @@ header{
 
 h2{
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0px;
     text-decoration: none;
 }
 
-.click{
+.headerLinks{
     text-decoration: none;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 15px;
 
-    /* background-color: #2C5364; */
-    /* border-radius: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%; */
 }
 
-.linkgeneros{
-    text-decoration: none;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-    background-color: #2C5364;
-    border-radius: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-
-
-.submitbtn{
-    background-color:#2C5364;
-    color: white;
-    border-radius: 50px;
-    border-color: transparent;
-    font-family: 'Work Sans', sans-serif;
-}
