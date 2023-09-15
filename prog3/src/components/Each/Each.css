@@ -6,9 +6,10 @@
     margin-top: 20px;
 }
 
-.articuloEach:hover{
-    size: 2px;
-}
+/* .portada:hover{
+    width: 200px;
+    height: 270px;
+} */
 .articuloEach{
     display: flex;
     flex-direction: column;
@@ -47,11 +48,11 @@
 
 
 }
-.botonlike:hover{
+.botonfav:hover{
     background-color: red;
 }
 
-.botonlike{
+.botonfav{
     color: white;
     text-decoration: none;
     margin: 5px;
@@ -73,4 +74,5 @@
 }
 .ver{
     max-width: 150px;
+    color: white;
 }

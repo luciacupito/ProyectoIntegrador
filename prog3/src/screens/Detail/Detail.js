@@ -69,17 +69,17 @@ class Detail extends Component{
         <section className="section_detail">
            
         
-            <article>
+            <div className="div_detail">
                 <div> <img src= { imagen + `${this.state.detail.poster_path}`} className="portada" alt="Poster" id="foto_portada"/></div>
 
-                <div>
+                <div className="div_text_detail">
                 <p className="text" id="rating">Rating: {this.state.detail.vote_average}</p>
-                <p className="text" id="releaseDate">Fecha de estreno: {this.state.detail.release_date}</p>
+                <p className="text" id="estreno">Fecha de estreno: {this.state.detail.release_date}</p>
                 <p className="text" id="duracion">Duracion: {this.state.detail.runtime} mins.</p>
                 <p className="text" id="sinopsis">{this.state.detail.overview}</p>
-                <button onClick={()=>this.agregarAFavoritos(this.props.id)} className='botonlike' type="button"> { this.state.heart }</button>
+                <button onClick={()=>this.agregarAFavoritos(this.props.id)} className='botonfav' type="button"> { this.state.heart }</button>
                 </div>
-            </article>
+            </div>
         </section>
     
         )

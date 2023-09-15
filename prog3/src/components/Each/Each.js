@@ -6,8 +6,8 @@ class Each extends Component{
     constructor(props){
         super(props);
         this.state = {
-            textoBotonDesc: "Ver Mas",
-            heart: 'Agregar a favoritos',
+            VerMasBoton: "Ver Mas",
+            fav: 'Agregar a favoritos',
             gitfavoritos: [],
             descOculta: true,
         }
@@ -22,7 +22,7 @@ class Each extends Component{
 
         if(arrayFavoritos.includes(this.props.id)){
             this.setState({
-                heart: 'Quitar de favoritos'
+                fav: 'Quitar de favoritos'
              })
            }     
         }
@@ -41,12 +41,12 @@ class Each extends Component{
             //Si está el id en el array, sacarlo
             arrayFavoritos = arrayFavoritos.filter(unId => unId !== this.props.id);
             this.setState ({
-                heart:'Agregar a favoritos'
+                fav:'Agregar a favoritos'
             })
         }else{
             arrayFavoritos.push(this.props.id);
             this.setState({
-                heart: 'Quitar de favoritos'
+                fav: 'Quitar de favoritos'
         })
         }
     }
@@ -62,12 +62,12 @@ class Each extends Component{
         if (this.state.descOculta == true) {
             this.setState({
                 descOculta: false,
-                textoBotonDesc: "Ver Menos"
+                VerMasBoton: "Ver Menos"
             }) 
         } else {
             this.setState({
                 descOculta: true,
-                textoBotonDesc: "Ver Mas"
+                VerMasBoton: "Ver Mas"
             })
         }
        
@@ -84,8 +84,8 @@ class Each extends Component{
 {/*         </button>
 
         <button className="boton"> */}
-        <button onClick={()=>this.mostrarDesc()} className='botontext' type="button">{ this.state.textoBotonDesc}</button>
-        <button onClick={()=>this.agregarAFavoritos(this.props.id)} className='botonlike' type="button"> { this.state.heart }</button>
+        <button onClick={()=>this.mostrarDesc()} className='botontext' type="button">{ this.state.VerMasBoton}</button>
+        <button onClick={()=>this.agregarAFavoritos(this.props.id)} className='botonfav' type="button"> { this.state.fav }</button>
         </div>
         <p className={this.state.descOculta ? 'ocultar':'ver' }>{this.props.description}</p>
         
