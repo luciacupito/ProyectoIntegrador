@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import favoritoscss from "../Favoritos/Favoritos.css"
+import Favoritoscss from "../Favoritos/Favoritos.css"
 import Each from "../../components/Each/Each";
 import Block from "../../components/Block/Block";
 
