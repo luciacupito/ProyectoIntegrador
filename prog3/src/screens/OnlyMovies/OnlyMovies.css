@@ -1,4 +1,4 @@
-.seccionPeliSerie{
+.block{
     max-width: 100%;
     color: white;
     font-family: 'Work Sans', sans-serif;
@@ -13,4 +13,10 @@
     margin: 10px;
     padding-bottom: 10px;
     align-items: flex-start;
+}
+
+.cargarmas{
+    margin: 50px;
+    border-color: transparent ;
+    border-radius: 10px;
 }

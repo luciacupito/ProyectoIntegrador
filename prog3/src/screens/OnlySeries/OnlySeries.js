@@ -32,7 +32,7 @@ class OnlySeries extends Component{
         
     }
 
-    filtrarPeliculas=(textoAFiltrar)=>{
+    MovieFilter=(textoAFiltrar)=>{
         console.log(textoAFiltrar);
     //  Desarrollar el método
        let pelisFiltradas = this.state.peliculas.filter(function(unaPelicula){
@@ -51,9 +51,9 @@ class OnlySeries extends Component{
         console.log(this.state.paginaPelis);
     return(
        <div>
-       <Filtro handle={this.filtrarPeliculas}/>
+       <Filtro handle={this.MovieFilter}/>
        <button onClick={()=>this.cargarPeliculas()} className='linkdetail'>Cargar más</button>
-        <section className="seccionPeliSerie">
+        <section className="block">
         
         {
             this.state.peliculas.map((Obj)=>{

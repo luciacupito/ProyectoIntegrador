@@ -15,14 +15,13 @@ function Header (){
 
 
     <nav className="headerDerecha">
-        <article className="seccionesHeader">     
+        <article className="seccionesHeader"> 
+        <Link to="/" className="headerLinks">Home</Link>    
         <Link to="/movies" className="headerLinks">Ver todas las Peliculas</Link>
         <Link to="/series" className="headerLinks">Ver todas las Series</Link>
         <Link to="/favoritos" className="headerLinks">Tus Favoritos</Link>
 
         </article>
-        <Buscador/>
-
 
         {/* <form className="form" action="./searchResults" method="get">
             <input className="input" type="text" name="buscar" id="" placeholder="Buscar..."/>

@@ -43,7 +43,7 @@ class SearchResults extends Component{
                     </React.Fragment>
                     : <>
                         <React.Fragment>
-                            <h1> No hay resultados en tu busqueda: {this.props.match.params.search} </h1>
+                            <h1 className="noresults"> No hay resultados en tu busqueda: {this.props.match.params.search} </h1>
                         </React.Fragment>
                     </>
                    
