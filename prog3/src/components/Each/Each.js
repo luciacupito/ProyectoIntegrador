@@ -79,14 +79,14 @@ class Each extends Component{
         <img src={`https://image.tmdb.org/t/p/w500/${this.props.poster}`}  alt={this.props.title} className="portada"/>
         <p className="nombre">{this.props.title}</p>   
         
-        <button className="boton">
+        <div className="boton">
             {this.props.esPeli?<Link className="botontext" to= {`./detPeli/${this.props.id}`}>Ir a detalle</Link>:<Link className="botontext" to= {`./detSerie/${this.props.id}`}>Ir a Detalle</Link>}
 {/*         </button>
 
         <button className="boton"> */}
         <button onClick={()=>this.mostrarDesc()} className='botontext' type="button">{ this.state.textoBotonDesc}</button>
         <button onClick={()=>this.agregarAFavoritos(this.props.id)} className='botonlike' type="button"> { this.state.heart }</button>
-        </button>
+        </div>
         <p className={this.state.descOculta ? 'ocultar':'ver' }>{this.props.description}</p>
         
         </article>

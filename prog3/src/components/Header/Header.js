@@ -9,7 +9,7 @@ function Header (){
         <header>
     <section className = "headerIzquierda">
         
-        <img className="logo" src='/logo.jpg' alt="Logo Empresa"/>
+        <img className="logo" src='/img/logo.jpg' alt="Logo Empresa"/>
         <a href="/" className="nombrepagina"><h2 className="nombrepagina">Filmex</h2></a>
     </section>
 

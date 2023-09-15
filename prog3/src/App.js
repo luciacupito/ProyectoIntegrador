@@ -4,6 +4,7 @@ import {BrowserRouter, Link, Switch} from 'react-router-dom' */
  */
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import AppCss from "../src/App.css"
 
 import Header from './components/Header/Header';
 import Home from "./screens/Home/Home";

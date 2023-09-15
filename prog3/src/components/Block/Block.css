@@ -1,14 +1,21 @@
 .block{
     height: auto;
     width: auto;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans';
     border-radius: 10px;
-    margin: 10px;
     align-items: flex-start;
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
+    background-color: rgb(24, 24, 24);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+
 
 
 };
