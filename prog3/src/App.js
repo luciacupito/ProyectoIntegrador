@@ -16,10 +16,6 @@ import SearchResults from "./screens/SearchResults/SearchResults";
 import Error from "./screens/Error/Error";
 
 
-
-
-
-
 function App() {
   return (
     <div className="App">
